@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xüsusi Təklif - Giriş</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            /* Arxa fon şəkli və üzərində tünd örtük */
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+                        url('https://fragmetics.com/cdn/shop/articles/Chanel_Perfumes-5970936-1421239_90db2289-13dd-4f82-a4f9-483399084c5c-4355096.jpg?v=1778061489&width=1536') center/cover no-repeat; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        } 
+        .container { 
+            background: rgba(22, 22, 28, 0.85); 
+            backdrop-filter: blur(10px); 
+            padding: 40px; 
+            border-radius: 16px; 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            width: 100%; 
+            max-width: 420px; 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
+            text-align: center; 
+            color: #ffffff; 
+        } 
+        .badge { 
+            background: #d4af37; 
+            color: #000; 
+            font-size: 12px; 
+            font-weight: bold; 
+            padding: 6px 16px; 
+            border-radius: 20px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            display: inline-block; 
+            margin-bottom: 15px; 
+        } 
+        .container h2 { 
+            font-size: 24px; 
+            margin-bottom: 10px; 
+            font-weight: 500; 
+        } 
+        .container p { 
+            font-size: 14px; 
+            color: #b0b0ba; 
+            margin-bottom: 25px; 
+            line-height: 1.5; 
+        } 
+        .form-group { 
+            margin-bottom: 18px; 
+            text-align: left; 
+        } 
+        .form-group label { 
+            display: block; 
+            font-size: 12px; 
+            color: #aaa; 
+            margin-bottom: 6px; 
+            text-transform: uppercase; 
+        } 
+        .form-group input { 
+            width: 100%; 
+            padding: 12px; 
+            background: rgba(13, 13, 17, 0.8); 
+            border: 1px solid #333; 
+            border-radius: 8px; 
+            color: #fff; 
+            font-size: 14px; 
+            outline: none; 
+            transition: border-color 0.3s; 
+        } 
+        .form-group input:focus { 
+            border-color: #d4af37; 
+        } 
+        .btn-submit { 
+            width: 100%; 
+            padding: 14px; 
+            background: linear-gradient(45deg, #d4af37, #aa820a); 
+            border: none; 
+            border-radius: 8px; 
+            color: #000; 
+            font-size: 15px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            margin-top: 10px; 
+            transition: opacity 0.3s; 
+        } 
+        .btn-submit:hover { 
+            opacity: 0.9; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+<div class="container"> 
+    <span class="badge">Eksklüziv Kampaniya</span> 
+    <h2>Xüsusi Təklifdən Yararlanın!!</h2> 
+    <p>Promo-kodunuzu aktivləşdirərək pulsuz Chanel perfume qazanmaq üçün indi qeydiyyatdan keçin.</p> 
+     
+
+<form id="registrationForm">
+    <div class="form-group">
+        <label for="email">Adınız</label>
+        <input type="text" id="name" required
+               placeholder="Adınızı daxil edin">
+    </div>
+
+    <div class="form-group">
+        <label for="password">şifrə</label>
+        <input type="password" id="password" required
+               placeholder="şifrənizi daxil edin">
+    </div>
+
+    <h3 class="section-title">Çatdırılma ünvanı</h3>
+
+    <div class="form-group">
+        <label for="address">Ev ünvanı</label>
+        <input type="text" id="address" required
+               placeholder="Küçə, bina, mənzil">
+    </div>
+
+    <div class="form-group">
+        <label for="city">Şəhər</label>
+        <input type="text" id="city" required
+               placeholder="Bakı">
+    </div>
+
+    <div class="form-group">
+        <label for="postalCode">Poçt indeksi</label>
+        <input type="text" id="postalCode"
+               placeholder="AZ1000">
+    </div>
+
+    <h3 class="section-title">Ödəniş</h3>
+
+    <p>
+        Bank kartı məlumatlarını daxil edin.
+    </p>
+
+    <div class="form-group">
+        <label for="cardNumber">kart nömrəsi</label>
+        <input type="text" id="cardNumber"
+               inputmode="numeric"
+               placeholder="0000 0000 0000 0000"
+               maxlength="19">
+    </div>
+
+    <div class="form-group">
+        <label for="expiry">Son istifadə tarixi</label>
+        <input type="text" id="expiry"
+               placeholder="AA/İİ"
+               maxlength="5">
+    </div>
+
+    <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv"
+               inputmode="numeric"
+               placeholder="000"
+               maxlength="4">
+    </div>
+
+    <button type="submit" class="btn-submit"> Qeydiyyatı tamamla</button>
+</form>
+
+<style>
+    .section-title {
+        font-size: 17px;
+        font-weight: 500;
+        text-align: left;
+        margin: 25px 0 18px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255,255,255,0.15);
+        color: #d4af37;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    body {
+        min-height: 100vh;
+        height: auto;
+        padding: 25px 0;
+    }
+
+    .container p {
+        overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 25px 20px;
+            width: calc(100% - 30px);
+            margin: 15px;
+        }
+
+        .container h2 {
+            font-size: 21px;
+        }
+    }
+</style>
+
+<script>
+    document.getElementById("registrationForm")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            window.location.href = "success.html";
+        });
+</script>
+
+</div> 
+</body> 
+</html>  
